@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /*i need minimum 3 dif colors. picking a light color for background, 
 a dark header, dark footer, input form section maybe a medium color or dif 
@@ -7,13 +8,9 @@ dark color */
 body {
     background-color: silver;
 }
+/*dark colored, fixed header w/navbar to the side */
 header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 20px;
-    background-color: darkgreen;
-    border: 5px solid black;
-    border-radius: 8px;
-    margin: 20px;
+    
 }
 header h1 {
     display: inline-block;
