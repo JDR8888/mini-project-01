@@ -5,14 +5,94 @@
 /*i need minimum 3 dif colors. picking a light color for background, 
 a dark header, dark footer, input form section maybe a medium color or dif 
 dark color */
+
+/*making body large enough to scroll to see fixed header*/
 body {
+    margin: 0;
     background-color: silver;
-}
+    height: 1200px;
+} 
 /*dark colored, fixed header w/navbar to the side */
 header {
-    
+    position: fixed;
+    background-color: darkgreen;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 88px;
+    border-bottom: 10px solid maroon;
 }
 header h1 {
     display: inline-block;
+    float: left;
+    padding-left: 15px;
 }
-
+/*class selector to set distance from top for the header elements and the text color and display */
+.heading {
+    padding-top: 15px;
+    color: black;
+    display: inline-block;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    float: right;   
+}
+/*nav links need to display inline and no text-decoration */
+nav ul li a {
+    text-decoration: none;
+    display: inline;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 8px;
+    color: black;
+    margin-right: 10px;
+}
+/*need to set the starting point of the "main" element so that it is below the fixed header, which is set to 75px, so will set upper padding to match */
+main {
+    padding-top: 99px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+/*want caption/text to be close to bottom of image, so pretty much no margin or padding between them*/
+.caption {
+    margin-top: 0px;
+    padding-top: 1px;
+}
+/* set image size */
+#pfp {
+    width: 420px;
+    height: auto;
+}
+.section-1 {
+    height: 600px;
+    padding-top: 20px;
+}
+.section-2 {
+    border-top: 10px solid maroon;
+    background-color: rgba(98, 0, 0, 0.285);
+    margin-top: 3px;
+}
+form {
+    padding: 30px;
+}
+/* will style the labels*/
+label {
+    display: contents;
+    color: darkblue;
+    font-weight: bold;
+    width: 180px;
+    border: 1px solid blue;
+}
+/* want a little space between input elements*/
+input {
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+}
+footer {
+    margin-top: 1px;
+    border-top: 10px solid darkgreen;
+    background-color: rgba(35, 86, 65, 0.14);
+}
