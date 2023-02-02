@@ -15,12 +15,12 @@ body {
 /*dark colored, fixed header w/navbar to the side */
 header {
     position: fixed;
-    background-color: darkgreen;
+    background-color: rgba(35, 86, 65, 0.14);
     top: 0;
     width: 100%;
     overflow: hidden;
     height: 88px;
-    border-bottom: 10px solid maroon;
+    border-bottom: 10px solid darkgreen;
 }
 header h1 {
     display: inline-block;
@@ -56,26 +56,53 @@ main {
     margin-bottom: 0px;
 }
 /*want caption/text to be close to bottom of image, so pretty much no margin or padding between them*/
-.caption {
-    margin-top: 0px;
-    padding-top: 1px;
-}
 /* set image size */
-#pfp {
-    width: 420px;
-    height: auto;
-}
+
 .section-1 {
     height: 600px;
-    padding-top: 20px;
+    padding: 25px;
+    border: 3px solid black;
+    margin: 25px 250px;
 }
+.thing-1 {
+    border: 2px solid red;
+    position: relative;
+    left: 220px;
+    right: 25px;  
+    top: 50px;
+}
+#pfp { /* sets picture size */
+    width: 666px;
+    height: auto;
+}
+.caption {
+    border: 7px solid black;
+    margin-right: 80px;
+    padding-top: 1px;
+    position: relative;
+    left: 50px;
+    right: 50px;
+    top: 36px;
+}
+
 .section-2 {
     border-top: 10px solid maroon;
     background-color: rgba(98, 0, 0, 0.285);
     margin-top: 3px;
+    display: block;
 }
 form {
     padding: 30px;
+    border: 3px solid black;
+}
+
+/*group each label-textbox together */
+.set {
+    border: 3px solid yellow;
+    width: 350px;
+    position: relative;
+    left: 550px;
+
 }
 /* will style the labels*/
 label {
@@ -95,4 +122,5 @@ footer {
     margin-top: 1px;
     border-top: 10px solid darkgreen;
     background-color: rgba(35, 86, 65, 0.14);
+    
 }
